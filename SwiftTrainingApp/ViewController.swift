@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     //Linked label to code. Able to call label further down and change value
     @IBOutlet weak var LabelOne: UILabel!
     
+    
+    @IBOutlet weak var TextField1: UITextField!
+    
+    
+    @IBOutlet weak var TextField2: UITextField!
+    
     var tapCount = 0
     
     // action to execute on button press
@@ -24,9 +30,19 @@ class ViewController: UIViewController {
         tapCount = tapCount + 1
         print(tapCount)
         
-        if tapCount >= 20 {
-            LabelOne.text = "Tap King!"
-        }
+        //if tapCount >= 20 {
+        //    LabelOne.text = "Tap King!"
+        //}
+        
+        print(TextField1)
+        print(TextField1.text!)
+        print(TextField2.text!)
+        
+        
+        
+        
+        
+        
     }
     
 
